@@ -3,9 +3,33 @@
 	require '../conexion/conexion.php';
 	if(isset($_POST['btn_inicio'])){
 		/*recoleccion de input*/
-		$username = $_POST['username'];
-		$password1 = $_POST['password'];
+		$_SESSION['temp_username_temp_inicio'] = "";
+		$_SESSION['temp_username_temp_session'] = "";
+		if($_SERVER['REQUEST_METHOD'] == 'POST'){ /*Envios por metodo POST*/
+			$username = $_POST['username'];
+			$password = $_POST['password1'];
+			$consulta = $conexion-> prepare("SELECT * FROM user_gestion WHERE username = :username AND password = :password");
+			/*Encripto la contraseña para compararla*/
+			$TempPasswordInicio = md5($password);
+			$consulta ->execute(array(':username' => $username, ':password' => $TempPasswordInicio));
+			$stmt = $conexion->prepare("SELECT nombre FROM user_gestion WHERE username = '$username'");
+			$stmt->execute();
+			$stmt->setFetchMode(PDO::FETCH_ASSOC);
+			while($row = $stmt->fetch()){
+				$nombre = $row['nombre'];
+			}
 
+			$resultado = $consulta ->fetch();
+			if($resultado !== false){
+				$_SESSION['username'] = $username;
+				$_SESSION['name'] = $nombre;
+				echo "<script>location.href='../views/home.php';</script>";
+			}else{
+				header('Location: ../index.php');
+			}
+			// echo $TempPasswordInicio;
+		}
+		
 	}elseif(isset($_POST['btn_registro'])){
 		/*recoleccion de input*/
 		$username = $_POST['username'];
@@ -43,4 +67,7 @@
 			}
 		}
 	}
+	mysql_close($conexion);
+	unset($sql);
+	unset($conexion);
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-12-2018 a las 22:15:37
+-- Tiempo de generación: 16-12-2018 a las 22:41:48
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -32,7 +32,7 @@ CREATE TABLE `user_gestion` (
   `id` int(3) NOT NULL,
   `username` varchar(30) NOT NULL,
   `nombre` varchar(100) NOT NULL,
-  `password` varchar(30) NOT NULL
+  `password` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -40,9 +40,7 @@ CREATE TABLE `user_gestion` (
 --
 
 INSERT INTO `user_gestion` (`id`, `username`, `nombre`, `password`) VALUES
-(1, 'jdiaz73', 'Juan David', '123'),
-(5, 'jdiaz733', 'Juan David', 'a94652aa97c7211ba8954dd15a3cf8'),
-(7, 'J_prueba', 'Juan', '4d186321c1a7f0f354b297e8914ab2');
+(9, 'juan', 'Juan David', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Índices para tablas volcadas
@@ -63,7 +61,7 @@ ALTER TABLE `user_gestion`
 -- AUTO_INCREMENT de la tabla `user_gestion`
 --
 ALTER TABLE `user_gestion`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
