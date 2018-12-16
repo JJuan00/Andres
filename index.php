@@ -19,9 +19,16 @@
 </head>
 <body>
     <?php
-
         if(isset($_SESSION['temp_username_temp_session'])){
             $_SESSION['temp_username_temp_session'] = "";
+        }
+    ?>
+    <?php
+
+        if(isset($_SESSION['temp_username_temp_inicio'])){
+            $tempUserSession2 = $_SESSION['temp_username_temp_inicio'];
+        }else{
+            $tempUserSession2 = "";
         }
     ?>
 
@@ -29,7 +36,7 @@
 		<div class="state"><br><i class="fa fa-unlock-alt"></i><br><h1>Inicio</h1></div>
         <form method="POST" action="includes/process.php">
     		<div class="form">
-    			<input placeholder='Username' type="text" name="username" required="username">
+    			<input placeholder='Username' type="text" name="username" required="username" value=<?php echo "\"".$tempUserSession2."\""; ?> >
     			<input placeholder='Contrase&ntilde;a' type="password" name="password1" required="password1">
     			<button class="login" name="btn_inicio">Iniciar</button>
     		</div>
