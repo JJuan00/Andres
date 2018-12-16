@@ -18,17 +18,18 @@
 
 <div class="panel">
 		<div class="state"><br><i class="fa fa-unlock-alt"></i><br><h1>Log in</h1></div>
-		<div class="form">
-			<input placeholder='Correo electronico' type="email">
-			<input placeholder='Password' type="password">
-			<div class="login">Login</div>
-		</div>
+        <form method="POST" action="#">
+    		<div class="form">
+    			<input placeholder='Correo electronico' type="email">
+    			<input placeholder='Password' type="password">
+    			<div class="login">Login</div>
+    		</div>
+        </form>
 		<div class="fack"><a href="#"><i class="fa fa-question-circle"></i>Forgot password?</a></div>
-	</div>
+</div>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/index.js"></script>
-
 
 
 
