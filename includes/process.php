@@ -26,6 +26,7 @@
 				echo "<script>location.href='../views/home.php';</script>";
 			}else{
 				header('Location: ../index.php');
+				$_SESSION['incorrect'] = 0;
 			}
 			// echo $TempPasswordInicio;
 		}

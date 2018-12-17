@@ -1,0 +1,22 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+	/*background: rgba(252,243,53,1);
+	background: -moz-linear-gradient(left, rgba(252,243,53,1) 0%, rgba(120,120,7,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,243,53,1)), color-stop(100%, rgba(120,120,7,1)));
+	background: -webkit-linear-gradient(left, rgba(252,243,53,1) 0%, rgba(120,120,7,1) 100%);
+	background: -o-linear-gradient(left, rgba(252,243,53,1) 0%, rgba(120,120,7,1) 100%);
+	background: -ms-linear-gradient(left, rgba(252,243,53,1) 0%, rgba(120,120,7,1) 100%);
+	background: linear-gradient(to right, rgba(252,243,53,1) 0%, rgba(120,120,7,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf335', endColorstr='#787807', GradientType=1 );*/
+	font-family: 'Roboto', sans-serif;
+  	background: -webkit-linear-gradient(45deg, rgba(252, 252, 79, 0.7), rgba(120, 120, 7, 0.9)), -webkit-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  	background: -moz-linear-gradient(45deg, rgba(252, 252, 79, 0.7), rgba(120, 120, 7, 0.9)), -moz-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  	background: -o-linear-gradient(45deg, rgba(252, 252, 79, 0.7), rgba(120, 120, 7, 0.9)), -o-linear-gradient(0deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  	background: linear-gradient(45deg, rgba(252, 252, 79, 0.7), rgba(120, 120, 7, 0.9)), linear-gradient(90deg, rgba(51, 136, 140, 0.3), rgba(87, 240, 240, 0.1));
+  	overflow: auto;
+}
