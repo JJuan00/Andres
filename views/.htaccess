@@ -1,0 +1,7 @@
+Options All -Indexes
+    # Url Amigables
+    RewriteEngine on
+    #RewriteRule ^([-a-zA-Z0-9/]+)$ home.php
+     ErrorDocument 403 https://gestionlav.000webhostapp.com/403/
+    # Opción desde directorio y subdirectorio a un parámetro en la url -> ruta del artículo
+     
