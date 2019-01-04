@@ -16,7 +16,7 @@
             // .catch( res2 => console.log(res2))
 
             // console.log(contenido)
-            axios.post('/includes/traer_client.php', {
+            axios.post('http://127.0.0.1/empresa/includes/traer_client.php', {
               })
               .then(function (response) {
                 cons22(response.data);

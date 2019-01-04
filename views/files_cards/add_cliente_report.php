@@ -84,7 +84,7 @@
                 <div class="form-group">
                   <div class="col-sm-6">
                       <label for="valor2">Valor del servicio.</label>
-                      <input type="text" class="form-control" placeholder="Valor del servicio" name="valor" id="valor2" required>
+                      <input type="number" class="form-control" placeholder="Valor del servicio" name="valor" id="valor2" required>
                   </div>
                 </div>
                 <div class="form-group">

@@ -4,7 +4,7 @@
   <div class="card-body">
     <h5 class="card-title"></h5>
     <p class="card-text">Informaci&oacute;n detallada de la factura (corregir factura)</p>
-    <a href="files_cards/" class="btn btn-primary">Abrir</a>
+    <a href="files_cards/correcion.php" class="btn btn-primary">Abrir</a>
   </div>
 </div>
 <br>
