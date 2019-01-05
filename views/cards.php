@@ -25,4 +25,20 @@
     <a href="files_cards/report.php" class="btn btn-primary">Abrir</a>
   </div>
 </div>
+<div class="card">
+  <h5 class="card-header">Subir recibo.</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Tener control de los archivos.</p>
+    <a href="files_cards/file.php" class="btn btn-primary">Abrir</a>
+  </div>
+</div>
+<div class="card">
+  <h5 class="card-header">Todos los clientes</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">Mirar todos los clientes.</p>
+    <a href="files_cards/clients_all.php" class="btn btn-primary">Abrir</a>
+  </div>
+</div>
 <br><br>

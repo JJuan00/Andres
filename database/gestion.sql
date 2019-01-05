@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-12-2018 a las 03:26:39
+-- Tiempo de generación: 04-01-2019 a las 02:00:33
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.0.26
 
@@ -29,20 +29,24 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `client_gestion` (
-  `id` int(3) NOT NULL,
+  `id` int(5) NOT NULL,
   `cod_factura` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `cedula` varchar(12) COLLATE utf8_unicode_ci NOT NULL,
-  `nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+  `nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `apellido` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `fecha` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `client_gestion`
 --
 
-INSERT INTO `client_gestion` (`id`, `cod_factura`, `cedula`, `nombre`) VALUES
-(14, '87', '323', 'sdfsdfsf'),
-(15, '1238', '6998', 'Juan David'),
-(16, '809', '1300', 'Juan David ');
+INSERT INTO `client_gestion` (`id`, `cod_factura`, `cedula`, `nombre`, `apellido`, `fecha`) VALUES
+(20, '123456', '100098234', 'Juan', 'David', '0000-00-00'),
+(21, '3456', '546654456', 'gfddgf', 'dfgdgff', NULL),
+(22, '1234569780', '100785', 'Nefer Jhuliano', 'Barragan', '2018-12-26'),
+(23, '54554544545', '46656556', 'Andres Felipe', 'Alonso Sanchez', '2018-12-26'),
+(24, '123', '123', 'Nicolas ', 'Rubiano', '2018-12-13');
 
 -- --------------------------------------------------------
 
@@ -95,7 +99,7 @@ ALTER TABLE `user_gestion`
 -- AUTO_INCREMENT de la tabla `client_gestion`
 --
 ALTER TABLE `client_gestion`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de la tabla `user_gestion`

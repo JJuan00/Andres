@@ -28,10 +28,9 @@
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.min.css"/>
       <!-- Semantic UI theme -->
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.min.css"/>
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-        <script>
+        <!-- <script>
         $(document).on('ready',function(){
 
   $('#btn-ingresar').click(function(){
@@ -51,7 +50,7 @@
      });
   });
 });
-       </script>
+       </script> -->
     </head>
     <body>
         <?php include '../nav_bar2.php'; ?>
@@ -61,32 +60,53 @@
                 <div class="form-group">
                   <div class="col-sm-6">
                       <label for="cod_factura">Codigo de la factura.</label>
-                      <input type="text" class="form-control" name="cod_factura" placeholder="Codigo factura" id="cod_factura" required>
+                      <input type="text" class="form-control" name="cod_factura" placeholder="Codigo factura" id="cod_factura2" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-6">
                       <label for="cc">C&eacute;dula.</label>
-                      <input type="text" class="form-control" placeholder="Cedula" name="cc" id="cc"  required>
+                      <input type="text" class="form-control" placeholder="Cedula" name="cc" id="cc2"  required>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-6">
-                      <label for="name">Nombre</label>
-                      <input type="text" class="form-control" placeholder="Nombre" name="name" id="name">
+                      <label for="name">Nombre(s).</label>
+                      <input type="text" class="form-control" placeholder="Nombre(s)" name="name" id="name2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-6">
+                      <label for="lastname">Apellido(s).</label>
+                      <input type="text" class="form-control" placeholder="Apellido(s)" name="lastname" id="lastname2" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-6">
+                      <label for="valor2">Valor del servicio.</label>
+                      <input type="text" class="form-control" placeholder="Valor del servicio" name="valor" id="valor2" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-6">
+                      <label for="date">Fecha de servicio.</label>
+                      <input type="date" class="form-control" name="f_data" id="date2">
                   </div>
                 </div>
                 <br>
                 <div class="col-sm-6">
-                    <input type="button" class="btn btn-primary btn-block" name="btn-ingresar" id="btn-ingresar" value="Registrar">
+                    <input type="button" class="btn btn-primary btn-block" name="btn-ingresar" id="btn-ingresar" value="Registrar" onclick="enviemos();">
                 </div>
             </div>
         </form>
+
+      <?php include 'script/script_envio.php'; ?>
 
         <div id="resp">
           <br><br>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     </body>
 </html>
